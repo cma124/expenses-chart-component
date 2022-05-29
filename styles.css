@@ -80,7 +80,7 @@ ul {
   border-radius: 20px;
 }
 
-.container-body h2 {
+.container-body > h2 {
   color: var(--clr-dark-brown);
 }
 
@@ -136,6 +136,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.summary-total h2 {
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .summary-amount {
