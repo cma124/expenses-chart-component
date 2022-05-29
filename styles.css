@@ -103,28 +103,23 @@ ul {
   color: var(--clr-pale-orange);
   background-color: var(--clr-dark-brown);
   font-weight: bold;
-  margin-bottom: 7.5px;
   padding: 10px 7.5px;
   border-radius: 5px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -125%);
+  transform: translate(-50%, -120%);
   opacity: 0;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .bar-amount {
   width: 2.5rem;
-  height: 120px;
   margin: auto;
   background-color: var(--clr-primary);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.25s ease-in-out;
-}
-
-.bar-amount.today {
-  background-color: var(--clr-secondary);
 }
 
 .bar-amount:hover {
@@ -144,7 +139,7 @@ ul {
 }
 
 .summary-amount {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--clr-dark-brown);
   font-weight: bold;
 }
@@ -156,4 +151,13 @@ ul {
 .summary-percentage {
   color: var(--clr-dark-brown);
   font-weight: bold;
+}
+
+/* Script Classes */
+.bar-amount-text.show {
+  opacity: 1;
+}
+
+.bar-amount.today {
+  background-color: var(--clr-secondary);
 }
